@@ -1,0 +1,138 @@
+/*reset*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
+
+html,body{
+    font: 16px 'Open Sans','Zhi Mang Xing',sans-serif;
+    margin:0;
+}
+
+h1{
+    margin:0;
+    font-family: 'Zhi Mang Xing';
+    font-weight: 400;
+}
+h2,
+p,
+ol{
+    margin:0;
+    font-weight:300;
+}
+section>p {
+    line-height: 1.5rem;
+}
+
+/*Fin reset*/
+
+/*Theme*/ 
+:root{
+    --color-primary:rgba(41, 128, 185,1.0);
+    --color-danger:rgba(231, 76, 60,1.0);
+    --color-default:rgba(245, 246, 250,0.9);
+
+}
+/*Fin Theme*/
+
+html{
+    background: url("../Asset/arriere.png") no-repeat fixed center center / cover ;
+    
+}
+main{
+    background: #eee;
+    box-shadow: 0  0 50px rgb(2, 2, 2);
+}
+
+header,main,footer {
+    max-width: 900px;
+    margin:0 auto 0;
+    background: var(--color-default);
+    
+    
+}
+section>p >img{
+    display: block;
+    width: 100%;
+}
+
+
+header>h1{
+    text-align: center;
+    padding: 30px;
+    font-size: 70px;
+
+
+}
+h1::before{
+    content: '\2605';
+    color: var(--color-danger);
+}
+
+ol{
+    margin-top: 10px;
+}
+
+h2{
+    background: var(--color-primary);
+    color: var(--color-default);
+    font-family: 'Zhi Mang Xing';
+    
+}
+h2::after{
+    content: '\203A';
+    color: var(--color-default);
+}
+
+section>p {
+     margin-left: 5px;
+     margin-right: 5px;
+ }
+
+h2{ 
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+section>p,section>h2{
+    margin-top: 15px;
+    
+}
+section > .bookmark{
+    transition-duration:  0.8;
+}
+.bookmark:target{/*pour voir la navigation*/
+    background: var(--color-danger);
+    color: #fafafa;
+}
+section h2, nav h2{
+    position: sticky;
+    top:0;
+    left:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+
+
+footer{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
